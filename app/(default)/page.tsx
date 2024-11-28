@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Home - Simple",
+  title: "AIGC数字人系统",
   description: "Page description",
 };
 

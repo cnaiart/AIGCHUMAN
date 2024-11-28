@@ -15,18 +15,22 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="/signin"
+                href="https://www.urlnet.cn/"
                 className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Login
+               登入
               </Link>
             </li>
             <li>
               <Link
-                href="/signup"
+                href="https://www.urlnet.cn/"
                 className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Register
+                注册
               </Link>
             </li>
           </ul>

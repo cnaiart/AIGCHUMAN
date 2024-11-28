@@ -30,16 +30,17 @@ export default function LargeTestimonial() {
               />
             </div>
             <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it's become my go-to tool for everything.”
+              “始终致力于用科技推动行业进步。123数字人AI智能口播生成App小程序，不仅是技术的结晶，更是对用户体验的深刻理解。了解更多产品信息，并加入到我们的用户群体中，体验这一创新科技带来的便利。
+
+{" "}
+              <em className="italic text-gray-500">抓住数字化时代的机遇，</em>,
+              让我们一起创造更加美好的未来。.”
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
+              <span className="text-gray-700">张明</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
+              <a className="text-blue-500 hover:underline" href="#0">
+                技术总监
               </a>
             </div>
           </div>
