@@ -1,7 +1,12 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { useState } from "react";
+import QRModal from "./qr-modal";
 
 export default function Header() {
+  const [showQRModal, setShowQRModal] = useState(false);
+  const urlnetUrl = "https://www.urlnet.cn/";
+
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -14,28 +19,30 @@ export default function Header() {
           {/* Desktop sign in links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link
-                href="https://www.urlnet.cn/"
+              <button
+                onClick={() => setShowQRModal(true)}
                 className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                登入
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                href="https://www.urlnet.cn/"
+              <button
+                onClick={() => setShowQRModal(true)}
                 className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 注册
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
       </div>
+
+      <QRModal
+        isOpen={showQRModal}
+        onClose={() => setShowQRModal(false)}
+        url={urlnetUrl}
+      />
     </header>
   );
 }
